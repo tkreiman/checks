@@ -15,4 +15,4 @@ class Average(Checks):
     @check("Averages 2 Numbers")
     def test_41_cents(self):
         """Outputs 5.5"""
-        self.spawn("./Average").stdout("5.5\n").exit(0)
+        self.spawn("./Average").stdout("5.5\n", "5.5\n").exit(0)
