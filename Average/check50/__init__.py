@@ -13,6 +13,6 @@ class Average(Checks):
         self.spawn("clang -o Average Average.c -lcs50 -lm").exit(0)
 
     @check("Averages 2 Numbers")
-    def test_41_cents(self):
+    def test_1_10_input(self):
         """Outputs 5.5"""
-        self.spawn("./Average").stdout("5.5\n", "5.5\n").exit(0)
+        self.spawn("./Average").stdin("1").stdin("10").stdout("5.5\n", "5.5\n").exit(0)
