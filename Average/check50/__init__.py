@@ -20,4 +20,4 @@ class Average(Checks):
     @check("compiles")
     def test_0_20_input(self):
         """Outputs 10"""
-        self.spawn("./Average 0 20").stdout("10\n", "10\n").exit(0)
+        self.spawn("./Average 0 20").stdout("10.0\n", "10.0\n").exit(0)
