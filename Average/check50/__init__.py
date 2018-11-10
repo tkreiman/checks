@@ -10,7 +10,7 @@ class Average(Checks):
     @check("Compiles")
     def compiles(self):
         """Average.c compiles"""
-        self.spawn("clang -o Average Average.c -lcs50 -lm").exit(0)
+        self.spawn("clang -o Average.c -lcs50 -lm").exit(0)
 
     @check("Averages 2 Numbers")
     def test_1_10_input(self):
