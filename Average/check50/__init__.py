@@ -16,3 +16,8 @@ class Average(Checks):
     def test_1_10_input(self):
         """Outputs 5.5"""
         self.spawn("./Average 1 10").stdout("5.5\n", "5.5\n").exit(0)
+    
+    @check("compiles")
+    def test_0_20_input(self):
+        """Outputs 10"""
+        self.spawn("./Average 0 20").stdout("10\n", "10\n").exit(0)
